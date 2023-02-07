@@ -42,7 +42,7 @@ const config: DocsThemeConfig = {
       const { asPath } = useRouter()
         if (asPath !== '/') {
         return {
-          titleTemplate: '%s – Ryan W. Januardi'
+          titleTemplate: '%s – BPS Provinsi Sulawesi Tenggara'
         }
       }
     },
@@ -52,8 +52,8 @@ const config: DocsThemeConfig = {
       const { route } = useRouter()
       const socialCard =
         route === '/' || !title
-          ? 'https://ryanwjanuardi.vercel.app/favicon.svg'
-          : `https://ryanwjanuardi.vercel.app/api/og?title=${title}`
+          ? 'https://konregkasulampua.vercel.app/favicon.svg'
+          : `https://konregkasulampua.vercel.app/api/og?title=${title}`
   
       return (
         <>
@@ -63,21 +63,21 @@ const config: DocsThemeConfig = {
           <meta httpEquiv="Content-Language" content="en" />
           <meta
             name="description"
-            content="Ryan W. Januardi Blog and Showcase"
+            content="Konreg Kasulampua BPS 2023"
           />
           <meta
             name="og:description"
-            content="Ryan W. Januardi Blog and Showcase"
+            content="Konreg Kasulampua BPS 2023"
           />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:image" content={socialCard} />
-          <meta name="twitter:site:domain" content="ryanwjanuardi.vercel.app" />
-          <meta name="twitter:url" content="https://ryanwjanuardi.vercel.app" />
+          <meta name="twitter:site:domain" content="konregkasulampua.vercel.app" />
+          <meta name="twitter:url" content="https://konregkasulampua.vercel.app" />
           <meta
             name="og:title"
-            content={title ? title + ' – Ryan W. Januardi' : 'Ryan W. Januardi'}
+            content={title ? title + ' – BPS Provinsi Sulawesi Tenggara' : 'BPS Provinsi Sulawesi Tenggara'}
           />
-          <meta name="apple-mobile-web-app-title" content="Ryan W. Januardi" />
+          <meta name="apple-mobile-web-app-title" content="BPS Provinsi Sulawesi Tenggara" />
           <link rel="icon" href="/favicon.ico" />
           <link
             rel="icon"

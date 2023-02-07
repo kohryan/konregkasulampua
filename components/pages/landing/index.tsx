@@ -11,6 +11,7 @@ import { HeroBackground } from "./HeroBackground";
 import { Card } from "./Card";
 import { FadeIn } from "../home-shared/FadeIn";
 import { LandingPageGlobalStyles } from "../home-shared/GlobalStyles";
+import { Sponsors } from "../../sponsor/Sponsors";
 
 
 function Background() {
@@ -32,6 +33,26 @@ function Background() {
         <span className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t dark:from-black from-white to-transparent" />
         <span className="bg-gradient-to-b dark:from-black from-white to-transparent absolute top-[20vh] left-0 w-full h-[50vh]" />
         <HeroBackground />
+      </div>
+    );
+  }
+
+  function Sponsor() {
+    return (
+      <div className="mx-auto">
+        <p className="bg-contain mb-2 md:!mb-4 text-sm font-semibold tracking-wide text-center text-black dark:text-white uppercase">
+          Didukung oleh:
+        </p>
+        <div className="grid grid-flow-col grid-cols-3 sm:grid-rows-3 md:grid-rows-2 lg:grid-rows-1">
+          <Sponsors
+            companyList={[
+              "Pemda",
+              "BPS",
+              "BI",
+            ]}
+            staticWidth
+          />
+        </div>
       </div>
     );
   }
@@ -78,6 +99,9 @@ function Background() {
             </p>
           </FadeIn>
           <Card />
+          <FadeIn delay={0.3} className="z-10 py-16">
+            <Sponsor />
+          </FadeIn>
         </main>
       </>
     );

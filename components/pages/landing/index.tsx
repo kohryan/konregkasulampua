@@ -1,3 +1,5 @@
+import styles from "./index.module.css";
+
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
@@ -6,9 +8,10 @@ import cn from "classnames";
 import { motion } from "framer-motion";
 
 import { HeroBackground } from "./HeroBackground";
+import { Card } from "./Card";
 import { FadeIn } from "../home-shared/FadeIn";
 import { LandingPageGlobalStyles } from "../home-shared/GlobalStyles";
-import styles from "./index.module.css";
+
 
 function Background() {
     return (
@@ -70,7 +73,11 @@ function Background() {
                     }
                 `}</style>
             </span>
+            <p className="mt-6 lg:!mt-6 mx-6 w-[300px] md:!w-full font-light text-md lg:text-lg leading-tight text-center mb-0 bg-clip-text bg-gradient-to-b from-black/80 to-black dark:from-white dark:to-[#AAAAAA]">
+            📌 Kendari, Maret 2023
+            </p>
           </FadeIn>
+          <Card />
         </main>
       </>
     );

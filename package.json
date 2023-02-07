@@ -30,6 +30,7 @@
     "@types/node": "^18.11.19",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
+    "postcss-nesting": "^11.1.0",
     "prettier": "^2.8.3",
     "prettier-plugin-tailwindcss": "^0.2.2",
     "stylelint": "^14.16.1",

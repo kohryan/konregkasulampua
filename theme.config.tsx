@@ -2,6 +2,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 import { useConfig } from 'nextra-theme-docs'
 import { useRouter } from 'next/router'
 import { Footer } from "./components/Footer";
+import Navigation from "./components/Navigation";
 
 const logo = (
   <span>
@@ -114,6 +115,9 @@ const config: DocsThemeConfig = {
     },
       defaultMenuCollapseLevel: 1,
       toggleButton: true,
+    },
+    navbar: {
+      component: Navigation,
     },
     footer: {
       component: Footer,

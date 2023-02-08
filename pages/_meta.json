@@ -9,5 +9,11 @@
         "sidebar": false,
         "toc": true
       }
+    },
+    "berita": {
+      "title": "Berita",
+      "theme": {
+        "typesetting": "article"
+      }
     }
 }

@@ -111,6 +111,7 @@ const config: DocsThemeConfig = {
     },
     toc: {
       float: true,
+      title: 'Daftar Informasi di Halaman ini:'
     },
     navbar: {
       component: Navigation,

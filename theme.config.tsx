@@ -97,24 +97,20 @@ const config: DocsThemeConfig = {
     },
     docsRepositoryBase: 'https://github.com/kohryan',
     editLink: {
-      text: 'Edit this page on GitHub →'
+      text: ''
     },
     feedback: {
-      content: 'Question? Give us feedback →',
+      content: '',
       labels: 'feedback'
     },
     search: {
         placeholder: "Cari Apa Saja",
     },
     sidebar: {
-    titleComponent({ title, type }) {
-      if (type === 'separator') {
-        return <span className="cursor-default">{title}</span>
-      }
-      return <>{title}</>
+      defaultMenuCollapseLevel: Number.POSITIVE_INFINITY,
     },
-      defaultMenuCollapseLevel: 1,
-      toggleButton: true,
+    toc: {
+      float: true,
     },
     navbar: {
       component: Navigation,

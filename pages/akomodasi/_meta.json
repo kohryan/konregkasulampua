@@ -1,0 +1,10 @@
+{
+    "index": {
+      "title": "Informasi Akomodasi",
+      "theme": {
+        "sidebar": true,
+        "toc": false
+      }
+    },
+    "hotel": "Hotel"
+}

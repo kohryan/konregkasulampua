@@ -15,5 +15,9 @@
       "theme": {
         "typesetting": "article"
       }
+    },
+    "akomodasi": {
+      "title": "Akomodasi",
+      "display": "children"
     }
 }

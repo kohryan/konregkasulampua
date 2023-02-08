@@ -160,7 +160,8 @@ export function FooterContent() {
               &copy; {new Date().getFullYear()} Badan Pusat Statistik Provinsi Sulawesi Tenggara. Semua Hak Dilindungi
             </p>
             <p className="mt-4 text-xs text-gray-500 dark:text-[#888888]">
-              Desain oleh Ryan W. Januardi, SST.
+              Desain oleh <a className="text-current" target="_blank" rel="noopener noreferrer" title="ryan" href="https://github.com/kohryan"
+            >Ryan W. Januardi, SST</a>. Didukung oleh <a className="text-current" target="_blank" rel="noopener noreferrer" title="vercel" href="https://vercel.com/kohryan">Vercel</a> & <a className="text-current" target="_blank" rel="noopener noreferrer" title="nextra" href="https://nextra.site">Nextra</a>
             </p>
           </div>
         </div>

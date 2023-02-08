@@ -15,11 +15,5 @@
       "theme": {
         "typesetting": "article"
       }
-    },
-    "test": {
-      "title": "Test",
-      "theme": {
-        "typesetting": "article"
-      }
     }
 }

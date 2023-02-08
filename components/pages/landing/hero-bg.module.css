@@ -7,8 +7,8 @@
   }
   
   .lines {
-    --right: #f8cde8;
-    --left: #b9ddff;
+    --right: #18aed3;
+    --left: #51bdd8;
     position: absolute;
     width: 200vw;
     margin-left: -50%;
@@ -45,8 +45,8 @@
   }
   
   :global(.dark) .lines {
-    --right: #4c2638;
-    --left: #223b67;
+    --right: #21a6aa;
+    --left: #26869e;
   }
   
   @keyframes go-up {

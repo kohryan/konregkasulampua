@@ -49,8 +49,8 @@
     top: calc(50% - 900px / 2 + 151px);
     background-image: linear-gradient(
       180deg,
-      rgba(236, 151, 207, 0.4) 0%,
-      rgba(233, 42, 103, 1) 100%
+      rgba(3, 175, 255, 0.4) 0%,
+      rgb(9, 120, 148) 100%
     );
     filter: blur(125px);
     transform: rotate(15deg);
@@ -76,8 +76,8 @@
   
     background: linear-gradient(
       180deg,
-      rgba(236, 151, 207, 0.4) 0%,
-      rgba(233, 42, 103, 1) 100%
+      rgba(18, 143, 192, 0.4) 0%,
+      rgb(0, 217, 255) 100%
     );
     transform: matrix(-1, 0, 0, 1, 0, 0);
     filter: blur(125px);

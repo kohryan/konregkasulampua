@@ -1,5 +1,5 @@
 import { DocsThemeConfig } from 'nextra-theme-docs'
-import { useConfig } from 'nextra-theme-docs'
+import { useConfig, useTheme } from 'nextra-theme-docs'
 import { useRouter } from 'next/router'
 import { Footer } from "./components/Footer";
 import Navigation from "./components/Navigation";
@@ -105,9 +105,6 @@ const config: DocsThemeConfig = {
     },
     search: {
         placeholder: "Cari Apa Saja",
-    },
-    sidebar: {
-      defaultMenuCollapseLevel: Number.POSITIVE_INFINITY,
     },
     toc: {
       float: true,

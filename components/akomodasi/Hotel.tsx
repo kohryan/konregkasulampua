@@ -23,7 +23,7 @@ const hotel = [
         href: '/akomodasi/hotel/same',
     },
     {
-        id: 2,
+        id: 3,
         foto:'/hotel/swissbel.jpg',
         namahotel: 'Swiss-Belhotel Kendari',
         jarak: '500 meter',
@@ -31,6 +31,16 @@ const hotel = [
         harga: '500-800',     
         gmaps: 'https://goo.gl/maps/JevCbXPYnnZbd16a8',
         href: '/akomodasi/hotel/swissbel',
+    },
+    {
+        id: 4,
+        foto:'/hotel/athaya.jpg',
+        namahotel: 'Hotel Athaya',
+        jarak: '1,1 kilometer',
+        waktu: '5 menit',
+        harga: '300-600',     
+        gmaps: 'https://goo.gl/maps/VrCxhYRfgEYHxzsw8',
+        href: '/akomodasi/hotel/athaya',
     },
 ]
 

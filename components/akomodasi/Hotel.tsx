@@ -5,7 +5,7 @@ const hotel = [
     {
         id: 1,
         foto:'/hotel/claro.jpg',
-        namahotel: 'Hotel Claro Kendari',
+        namahotel: 'Hotel Claro',
         jarak: '0 kilometer',
         waktu: '0 menit',
         harga: '700-7.000',     
@@ -15,7 +15,7 @@ const hotel = [
     {
         id: 2,
         foto:'/hotel/same.jpg',
-        namahotel: 'Same Hotel Kendari',
+        namahotel: 'Same Hotel',
         jarak: '200 meter',
         waktu: '2 menit',
         harga: '400-800',     
@@ -25,7 +25,7 @@ const hotel = [
     {
         id: 3,
         foto:'/hotel/swissbel.jpg',
-        namahotel: 'Swiss-Belhotel Kendari',
+        namahotel: 'Swiss-Belhotel',
         jarak: '500 meter',
         waktu: '2 menit',
         harga: '500-800',     

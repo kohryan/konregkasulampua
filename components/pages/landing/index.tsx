@@ -1,11 +1,6 @@
 import styles from "./index.module.css";
 
-import React from "react";
-import Head from "next/head";
-import Link from "next/link";
-
 import cn from "classnames";
-import { motion } from "framer-motion";
 
 import { HeroBackground } from "./HeroBackground";
 import { Card } from "./Card";
@@ -63,8 +58,15 @@ function Background() {
         <LandingPageGlobalStyles />
         <main className="relative flex flex-col items-center justify-center w-full h-full  overflow-hidden [--geist-foreground:#fff] dark:[--geist-foreground:#000] [--gradient-stop-1:0px] [--gradient-stop-2:120px] sm:[--gradient-stop-1:0px] sm:[--gradient-stop-2:120px]">
           <Background />
+          <div className="mt-12 lg:!mt-12 mx-6 font-regular text-md lg:text-lg leading-tight text-center mb-0 bg-clip-text text-black dark:text-white">
+            <div className={cn(styles.typewriter)}>
+              <span>
+              Selamat Datang di Pusat Informasi dan Layanan Peserta
+              </span>
+            </div>
+          </div>
           <FadeIn className="z-10 flex flex-col items-center justify-center w-full h-full">
-            <h1 className="mt-12 lg:!mt-20 mx-6 w-[300px] md:!w-full font-light text-4xl lg:text-5xl leading-tight text-center mb-0 bg-clip-text bg-gradient-to-b from-black/80 to-black dark:from-white dark:to-[#AAAAAA]">
+            <h1 className="mt-3 lg:!mt-3 mx-6 w-[300px] md:!w-full font-light text-4xl lg:text-5xl leading-tight text-center mb-0 bg-clip-text bg-gradient-to-b from-black/80 to-black dark:from-white dark:to-[#AAAAAA]">
               Konsultasi Regional PDRB
             </h1>
             <span className="flex text-center mx-auto items-center justify-center p-4 mt-0 mb-0 sm:mb-0 lg:mt-0 sm:w-full md:w-3/4 lg:w-1/2 xl:2-1/2">

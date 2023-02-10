@@ -1,10 +1,6 @@
 {
-    "index": {
-      "title": "Informasi Akomodasi",
-      "theme": {
-        "sidebar": true,
-        "toc": false
-      }
-    },
-    "hotel": "Hotel"
+    "hotel": "Hotel",
+    "rumahmakan": "Rumah Makan",
+    "minimarket": "Minimarket",
+    "transportasi": "Transportasi"
 }

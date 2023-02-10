@@ -1,9 +1,12 @@
 ---
-title: "Info Akomodasi"
-description: Informasi terkait hotel/penginapan, tempat makan, warung/swalayan, akses transportasi, dan fasilitas akomodasi lainnya yang terdekat/di sekitar lokasi kegiatan
+title: "Informasi Minimarket/Swalayan/Toko Kelontong"
+description: Informasi keberadaan minimarket, swalayan, dan toko kelontong di sekitar lokasi kegiatan
+symbol: "/akomodasi/minimarket.svg"
 ---
 
-# Peta
+import { Hotel } from "../../components/akomodasi/Hotel"
+
+## Venue Hotel
 
 export function Maps() {
   return (
@@ -16,3 +19,7 @@ export function Maps() {
 }
 
 <Maps />
+
+## Daftar Minimarket/Swalayan/Toko Kelontong di Sekitar Venue
+
+<Hotel />

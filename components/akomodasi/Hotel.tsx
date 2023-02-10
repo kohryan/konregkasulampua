@@ -1,4 +1,3 @@
-import React from "react";
 import { MapPinIcon, BanknotesIcon, ClockIcon } from '@heroicons/react/24/solid'
 
 const hotel = [

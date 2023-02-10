@@ -6,6 +6,10 @@ module.exports = {
     "./nextra-theme-docs/**/*.{js,tsx}",
     "./pages/**/*.{md,mdx,tsx}",
     "./theme.config.js",
+    "./node_modules/flowbite/**/*.{js,tsx}",
+  ],
+  plugins: [
+    require('flowbite/plugin')
   ],
   theme: {
     extend: {

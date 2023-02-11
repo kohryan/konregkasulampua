@@ -149,7 +149,7 @@ const minimarket = [
     }
   ]
 
-export function Minimarket() {
+export function Toko() {
     return (
         
     <div className="max-w-2xl mx-auto py-2 px-2 sm:py-2 sm:px-2 lg:max-w-7xl lg:px-2">

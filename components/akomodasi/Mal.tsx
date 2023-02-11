@@ -1,4 +1,5 @@
 import { MapPinIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image'
 
 const mal = [
     {
@@ -58,8 +59,9 @@ export function Mal() {
         <div className="mt-2 grid grid-cols-1 gap-y-10 sm:grid-cols-1 gap-x-2 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-2">
             
             {mal.map((item) => (
-                <a href={item.gmaps} className="flex flex-row items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                    <img className="object-cover w-24 h-36 rounded-t-lg" src={item.foto} alt="foto" />
+            <div key={item.id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href={item.gmaps} className="flex flex-row items-center">
+                    <Image className="object-cover w-24 h-36 rounded-l-lg" width="450" height="600" src={item.foto} alt="foto" />
                     <div className="flex flex-col justify-between p-4 leading-normal">
                         <h5 className="mb-1 text-lg font-bold tracking-tight text-gray-900 dark:text-white">{item.nama}</h5>
                         <div className="mb-1 flex items-center justify-between align-middle"> 
@@ -70,6 +72,7 @@ export function Mal() {
                         Lihat Peta →</span></a>
                     </div>
                 </a>
+            </div>
             ))}
 
         </div>

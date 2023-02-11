@@ -1,4 +1,4 @@
-import { MapPinIcon, BanknotesIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image'
 
 const minimarket = [
     {
@@ -162,10 +162,10 @@ export function Minimarket() {
                         <div className="flow-root">
                             <ul role="list" className="divide-y divide-gray-200 dark:divide-gray-700">
                                 {minimarket.map((item) => (
-                                <li className="py-0 sm:py-2">
+                                <li key={item.id} className="py-0 sm:py-2">
                                     <div className="flex items-center space-x-4">
                                         <div className="flex-shrink-0">
-                                            <img className="w-8 h-8 rounded-full" src="/minimarket/minimarket.png" alt="minimarket" />
+                                            <Image className="w-8 h-8 rounded-full" src="/minimarket/minimarket.png" width="384" height="384" alt="minimarket" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
@@ -193,10 +193,10 @@ export function Minimarket() {
                         <div className="flow-root">
                             <ul role="list" className="divide-y divide-gray-200 dark:divide-gray-700">
                                 {oleholeh.map((item) => (
-                                <li className="py-0 sm:py-2">
+                                <li key={item.id} className="py-0 sm:py-2">
                                     <div className="flex items-center space-x-4">
                                         <div className="flex-shrink-0">
-                                            <img className="w-8 h-8 rounded-full" src="/minimarket/oleholeh.png" alt="minimarket" />
+                                            <Image width="384" height="384" className="w-8 h-8 rounded-full" src="/minimarket/oleholeh.png" alt="minimarket" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
@@ -224,10 +224,10 @@ export function Minimarket() {
                         <div className="flow-root">
                             <ul role="list" className="divide-y divide-gray-200 dark:divide-gray-700">
                                 {apotek.map((item) => (
-                                <li className="py-0 sm:py-2">
+                                <li key={item.id} className="py-0 sm:py-2">
                                     <div className="flex items-center space-x-4">
                                         <div className="flex-shrink-0">
-                                            <img className="w-8 h-8 rounded-full" src="/minimarket/apotek.png" alt="minimarket" />
+                                            <Image width="384" height="384" className="w-8 h-8 rounded-full" src="/minimarket/apotek.png" alt="minimarket" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <p className="text-sm font-medium text-gray-900 truncate dark:text-white">

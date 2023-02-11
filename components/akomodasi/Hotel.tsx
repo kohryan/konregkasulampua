@@ -1,4 +1,5 @@
 import { MapPinIcon, BanknotesIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image'
 
 const hotel = [
     {
@@ -180,7 +181,7 @@ export function Hotel() {
             {hotel.map((item) => (
                 <div key={item.id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href={item.href}>
-                        <img className="rounded-t-lg" src={item.foto} alt="claro"/>
+                        <Image className="rounded-t-lg" width="630" height="420" src={item.foto} alt="claro" />
                     </a>
                     <div className="p-5">
                         <h5 className="mb-0 text-lg font-bold tracking-tight text-gray-900 dark:text-white">{item.namahotel}</h5>

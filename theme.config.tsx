@@ -117,7 +117,7 @@ const config: DocsThemeConfig = {
       component: Footer,
     },
     nextThemes: {
-      defaultTheme: "dark",
+      defaultTheme: "system",
     },
   };
 

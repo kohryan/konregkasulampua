@@ -135,13 +135,20 @@ const minimarket = [
     },
     {
       "id": 5,
+      "nama": "Sultra Tenun",
+      "jarak": "1,7",
+      "waktu": 6,
+      "gmaps": "https://goo.gl/maps/XKfb2ma1dC19jwiT8"
+    },
+    {
+      "id": 6,
       "nama": "Athifah Oleh-Oleh",
       "jarak": "2,8",
       "waktu": 8,
       "gmaps": "https://goo.gl/maps/ovw9BAx7LE4qZZGMA"
     },
     {
-      "id": 6,
+      "id": 7,
       "nama": "Bravo Oleh-Oleh",
       "jarak": "1,9",
       "waktu": 7,

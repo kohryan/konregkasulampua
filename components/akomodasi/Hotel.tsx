@@ -172,6 +172,7 @@ const hotel = [
     }
   ]
 
+
 export function Hotel() {
     return (
         

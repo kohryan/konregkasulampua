@@ -10,14 +10,18 @@
         "toc": true
       }
     },
+    "kasulampua": {
+      "title": "🔥Konreg Kasulampua",
+      "display": "children"
+    },
     "berita": {
-      "title": "Berita",
+      "title": "📰 Berita",
       "theme": {
         "typesetting": "article"
       }
     },
     "akomodasi": {
-      "title": "Akomodasi",
+      "title": "🛎️ Akomodasi",
       "display": "children"
     }
 }

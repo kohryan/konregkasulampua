@@ -1,7 +1,8 @@
 {
   "name": "konregkasulampua",
-  "version": "0.1.0",
+  "version": "0.8.1",
   "private": true,
+  "author": "Ryan W. Januardi",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

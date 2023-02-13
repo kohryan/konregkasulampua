@@ -7,11 +7,11 @@ type: posts
 import { getPagesUnderRoute } from "nextra/context";
 import Link from "next/link";
 
-export function AkomodasiHeader() {
+export function KasulampuaHeader() {
   return (
     <div className="max-w-screen-lg mx-auto pt-4 pb-8 mb-6 border-b border-gray-400 border-opacity-20">
       <h1>
-        <p className="font-bold text-center mb-6 lg:text-5xl">Informasi Kegiatan Konreg Kasulampua</p>
+        <p className="font-bold text-center mb-6 lg:text-5xl">Info Kegiatan Konsultasi Regional PDRB Wilayah Kasulampua Tahun 2023</p>
       </h1>
       <p className="text-center text-gray-500 dark:text-gray-400 font-space-grotesk">
         Informasi terkait teknis kegiatan, jadwal/rundown, narasumber, materi, notulen, dll.
@@ -20,8 +20,8 @@ export function AkomodasiHeader() {
   );
 }
 
-export function AkomodasiIndex() {
-  return getPagesUnderRoute("/akomodasi").map((page) => {
+export function KasulampuaIndex() {
+  return getPagesUnderRoute("/kasulampua").map((page) => {
     return (
         <div className="flex items-center justify-center align-top">
           <div key={page.route} className="relative">
@@ -37,18 +37,18 @@ export function AkomodasiIndex() {
   });
 }
 
-export function AkomodasiLayout() {
+export function KasulampuaLayout() {
     return (
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
           <p className="text-center text-sm font-light text-gray-600 dark:text-white font-space-grotesk">
              Klik icon berikut untuk informasi selengkapnya
           </p>
         <div className="grid grid-cols-2 gap-y-10 mt-12 sm:grid-cols-2 gap-x-6 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-8 mx-auto mb-0">
-              <AkomodasiIndex />
+              <KasulampuaIndex />
         </div>
       </div>
   );
 }
 
-<AkomodasiHeader />
-<AkomodasiLayout />
+<KasulampuaHeader />
+<KasulampuaLayout />

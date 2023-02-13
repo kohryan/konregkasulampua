@@ -101,6 +101,30 @@ function Background() {
             📌 Kendari, 13-15 Maret 2023
             </p>
           </FadeIn>
+          <FadeIn className="z-10">
+            <div className="mt-3 flex flex-col gap-3 md:!flex-row">
+              <a href="" className="inline-flex items-center px-3 py-3 text-sm font-medium text-center text-white dark:text-black bg-black rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-white dark:hover:bg-gray-100 dark:focus:ring-gray-800">
+                <span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png" className="h-8 w-8  inline-flex"/> Gabung ke WAG Peserta</span>
+                <style jsx>{`
+                    span {
+                    padding: 0;
+                    mask-image: linear-gradient(
+                        60deg,
+                        black 25%,
+                        rgba(0, 0, 0, 0.2) 50%,
+                        black 75%
+                        );
+                    mask-size: 400%;
+                    mask-position: 0%;
+                    }
+                    span:hover {
+                        mask-position: 100%;
+                        transition: mask-position 1s ease, -webkit-mask-position 1s ease;
+                    }
+                `}</style>
+              </a>
+            </div>
+          </FadeIn>
           <Card />
           <FadeIn delay={0.3} className="z-10 py-16">
             <Sponsor />

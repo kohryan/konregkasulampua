@@ -1,7 +1,3 @@
-import { FireKalimantan } from "./FlameKalimantan";
-import { FireSulawesi } from "./FlameSulawesi";
-import { FireMaluku } from "./FlameMaluku";
-import { FirePapua } from "./FlamePapua";
 import { FadeIn } from "../home-shared/FadeIn";
 import Image from "next/image";
 

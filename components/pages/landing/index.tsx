@@ -56,8 +56,9 @@ function Background() {
     return (
       <>
         <LandingPageGlobalStyles />
-        <main className="relative flex flex-col items-center justify-center w-full h-full  overflow-hidden [--geist-foreground:#fff] dark:[--geist-foreground:#000] [--gradient-stop-1:0px] [--gradient-stop-2:120px] sm:[--gradient-stop-1:0px] sm:[--gradient-stop-2:120px]">
-          <Background />
+        <main className="relative flex flex-col items-center justify-center w-full h-full overflow-hidden ">
+          <div className="[--geist-foreground:#fff] dark:[--geist-foreground:#000] [--gradient-stop-1:0px] [--gradient-stop-2:120px] sm:[--gradient-stop-1:0px] sm:[--gradient-stop-2:120px]">
+          <Background /></div>
           <div className="mt-12 lg:!mt-12 mx-12 px-12 font-regular text-md lg:text-lg leading-tight text-center mb-0 bg-clip-text text-black dark:text-white">
             <div className={cn(styles.typewriter)}>
               <span>

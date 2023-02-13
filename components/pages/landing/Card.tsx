@@ -3,17 +3,18 @@ import { FireSulawesi } from "./FlameSulawesi";
 import { FireMaluku } from "./FlameMaluku";
 import { FirePapua } from "./FlamePapua";
 import { FadeIn } from "../home-shared/FadeIn";
+import Image from "next/image";
 
 export function Card() {
     return (
         <div className="max-w-2xl mx-auto py-12 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8">
             <div className="grid grid-cols-1 gap-y-10 mt-12 sm:grid-cols-2 gap-x-6 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-8 mx-auto mb-0">
                 
-            <FadeIn delay={0.1}>
-                <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <div className="flex items-center justify-center col-span-2">
-                        <div className="relative w-20 h-20 mr-4"> <FireKalimantan /> </div>
-                    </div>
+            <FadeIn className="z-10" delay={0.1}>
+                <div className="max-w-sm backdrop-blur-sm bg-white/30 border border-gray-200 rounded-lg shadow dark:bg-gray-800/30 dark:border-gray-700">
+                    <a href="/kasulampua">
+                        <Image className="rounded-t-lg" width="630" height="420" src="/pattern/pattern-1.svg" alt="kasulampua" />
+                    </a>
                     <div className="p-5 text-center justify-center">
                         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Info Konreg</h5>
                         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Jadwal, lokasi, materi, narasumber, dll.</p>
@@ -25,11 +26,11 @@ export function Card() {
                 </div>
             </FadeIn>
 
-            <FadeIn delay={0.2}>
-                <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <div className="flex items-center justify-center col-span-2">
-                        <div className="relative w-20 h-20 mr-4"> <FireSulawesi /> </div>
-                    </div>
+            <FadeIn className="z-10" delay={0.2}>
+                <div className="max-w-sm backdrop-blur-sm bg-white/30 border border-gray-200 rounded-lg shadow dark:bg-gray-800/30 dark:border-gray-700">
+                    <a href="/akomodasi">
+                        <Image className="rounded-t-lg" width="630" height="420" src="/pattern/pattern-2.svg" alt="kasulampua" />
+                    </a>
                     <div className="p-5 text-center justify-center">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Info Akomodasi</h5>
                         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Hotel/penginapan, transportasi, rumah makan, dll.</p>
@@ -41,11 +42,11 @@ export function Card() {
                 </div>
             </FadeIn>
 
-            <FadeIn delay={0.3}>
-                <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <div className="flex items-center justify-center col-span-2">
-                        <div className="relative w-20 h-20 mr-4"> <FireMaluku /> </div>
-                    </div>
+            <FadeIn className="z-10" delay={0.3}>
+                <div className="max-w-sm backdrop-blur-sm bg-white/30 border border-gray-200 rounded-lg shadow dark:bg-gray-800/30 dark:border-gray-700">
+                    <a href="/wisata">
+                        <Image className="rounded-t-lg" width="630" height="420" src="/pattern/pattern-3.svg" alt="kasulampua" />
+                    </a>
                     <div className="p-5 text-center justify-center">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Info Wisata</h5>
                         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Tempat wisata, kuliner daerah, toko oleh-oleh, dll.</p>
@@ -57,11 +58,11 @@ export function Card() {
                 </div>
             </FadeIn>
 
-            <FadeIn delay={0.4}>
-                <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <div className="flex items-center justify-center col-span-2">
-                        <div className="relative w-20 h-20 mr-4"> <FirePapua /> </div>
-                    </div>
+            <FadeIn className="z-10" delay={0.4}>
+                <div className="max-w-sm backdrop-blur-sm bg-white/30 border border-gray-200 rounded-lg shadow dark:bg-gray-800/30 dark:border-gray-700">
+                    <a href="/kontak">
+                        <Image className="rounded-t-lg" width="630" height="420" src="/pattern/pattern-4.svg" alt="kasulampua" />
+                    </a>
                     <div className="p-5 text-center justify-center">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Hubungi Kami</h5>
                         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">FAQ dan kontak panita untuk informasi lainnya.</p>

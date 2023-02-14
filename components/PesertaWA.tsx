@@ -5,17 +5,45 @@ import { useRouter } from 'next/router'
 export function Peserta() {
   const router = useRouter();
   const [password, setPassword] = useState("");
+  const [warning, setWarning] = useState("");
+
+  const playSound = () => {
+    const audio = new Audio("/error.mp3");
+    audio.play();
+  };
+
+  const phone =  ["08115912180","081284643265","081355444622","081349099330","08112953666","081230063006"];
 
   const submitForm = (e) => {
     e.preventDefault()
-    if (password == "08115912180" || password == "081284643265" || password == "081355444622" || password == "081349099330" || password == "08112953666" || password == "081230063006") {
+    if (phone.includes(password)) {
       router.push("https://chat.whatsapp.com/EhWJcq8cMr6GeT7G9IRIQB")
+      setWarning("");
+    } {
+      setWarning("Incorrect password");
+      playSound();
     }
+  };
+
+  const clearWarning = () => {
+    setWarning("");
   };
 
   return (
     <>
-                <form onClick={submitForm}>
+              {warning && 
+                  <div role="alert">
+                  <div className="bg-red-500 text-sm text-white font-bold rounded-t px-4 py-2">
+                    Peringatan!
+                  </div>
+                  <div className="border border-t-0 text-sm border-red-400 rounded-b bg-red-100 px-4 py-1 text-red-700">
+                    <p>- Nomor HP tidak boleh kosong!</p>
+                    <p>- Nomor HP yang Anda Masukkan Tidak Ditemukan, Silakan Coba Lagi!</p>
+                  </div>
+                  <audio src="error.mp3" autoPlay />
+                </div>
+                }
+                <form onClick={clearWarning} onSubmit={submitForm}>
                   <div className="relative w-full mt-3 mb-3">
                     <input
                       type="text"

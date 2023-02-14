@@ -8,7 +8,7 @@ export function Peserta() {
 
   const submitForm = (e) => {
     e.preventDefault()
-    if (password == "08115912180" || password == "081284643265" || password == "081355444622") {
+    if (password == "08115912180" || password == "081284643265" || password == "081355444622" || password == "081349099330" || password == "08112953666" || password == "081230063006") {
       router.push("https://chat.whatsapp.com/EhWJcq8cMr6GeT7G9IRIQB")
     }
   };

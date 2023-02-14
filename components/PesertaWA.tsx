@@ -16,12 +16,12 @@ export function Peserta() {
 
   const submitForm = (e) => {
     e.preventDefault()
-    if (phone.includes(password)) {
-      router.push("https://chat.whatsapp.com/EhWJcq8cMr6GeT7G9IRIQB")
-      setWarning("");
-    } {
+    if (password !== '' && !phone.includes(password)) {
       setWarning("Incorrect password");
       playSound();
+    } else {
+      setWarning("");
+      router.push("https://chat.whatsapp.com/EhWJcq8cMr6GeT7G9IRIQB");
     }
   };
 

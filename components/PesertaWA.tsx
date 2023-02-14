@@ -31,7 +31,7 @@ export function Peserta() {
 
   return (
     <>
-              {warning && 
+                {warning && 
                   <div role="alert">
                   <div className="bg-red-500 text-sm text-white font-bold rounded-t px-4 py-2">
                     Peringatan!

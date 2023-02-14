@@ -103,7 +103,7 @@ function Background() {
           </FadeIn>
           <FadeIn className="z-10">
             <div className="mt-3 flex flex-col gap-3 md:!flex-row">
-              <a href="" className="inline-flex items-center px-3 py-3 text-sm font-medium text-center text-white dark:text-black bg-black rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-white dark:hover:bg-gray-100 dark:focus:ring-gray-800">
+              <a href="/login" className="inline-flex items-center px-3 py-3 text-sm font-medium text-center text-white dark:text-black bg-black rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-white dark:hover:bg-gray-100 dark:focus:ring-gray-800">
                 <span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png" className="h-8 w-8  inline-flex"/> Gabung ke WAG Peserta</span>
                 <style jsx>{`
                     span {

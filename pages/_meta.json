@@ -20,6 +20,12 @@
         "typesetting": "article"
       }
     },
+    "login": {
+      "display": "hidden",
+      "theme": {
+        "typesetting": "article"
+      }
+    },
     "akomodasi": {
       "title": "Akomodasi",
       "display": "children"

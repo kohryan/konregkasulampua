@@ -16,7 +16,10 @@ export function Peserta() {
 
   const submitForm = (e) => {
     e.preventDefault()
-    if (password !== '' && !phone.includes(password)) {
+    if (password.trim() === '') {
+      setWarning("Please enter a password");
+      playSound();
+    } else if (!phone.includes(password)) {
       setWarning("Incorrect password");
       playSound();
     } else {

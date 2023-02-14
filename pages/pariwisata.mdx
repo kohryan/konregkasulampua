@@ -1,0 +1,65 @@
+---
+title: "Pariwisata"
+description: Informasi terkait destinasi wisata dan pengetahuan tentang budaya & adat istiadat
+type: posts
+---
+
+import { getPagesUnderRoute } from "nextra/context";
+import Link from "next/link";
+
+export function PariwisataHeader() {
+  return (
+    <div className="mx-auto mb-6 max-w-screen-lg border-b border-gray-400 border-opacity-20 pt-4 pb-8">
+      <h1>
+        <p className="mb-6 text-center font-bold lg:text-5xl">
+          Informasi Pariwisata
+        </p>
+      </h1>
+      <p className="text-center font-space-grotesk text-gray-500 dark:text-gray-400">
+        Informasi terkait wisata dan pengetahuan tentang budaya & adat istiadat
+        di Provinsi Sulawesi Tenggara
+      </p>
+    </div>
+  );
+}
+
+export function PariwisataIndex() {
+  return getPagesUnderRoute("/pariwisata").map((page) => {
+    return (
+      <div className="flex items-center justify-center align-top">
+        <div key={page.route} className="relative">
+          <Link href={page.route}>
+            <img
+              className="items-center rounded-t-lg"
+              src={page.frontMatter?.symbol}
+              alt="icon"
+            />
+          </Link>
+          <Link
+            href={page.route}
+            style={{ color: "inherit", textDecoration: "none" }}
+            className="text-md mt-2 block text-center font-medium"
+          >
+            {page.meta?.title || page.frontMatter?.title || page.name}
+          </Link>
+        </div>
+      </div>
+    );
+  });
+}
+
+export function PariwisataLayout() {
+  return (
+    <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <p className="text-center font-space-grotesk text-sm font-light text-gray-600 dark:text-white">
+        Klik icon berikut untuk informasi selengkapnya
+      </p>
+      <div className="mx-auto mt-12 mb-0 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-8">
+        <PariwisataIndex />
+      </div>
+    </div>
+  );
+}
+
+<PariwisataHeader />
+<PariwisataLayout />

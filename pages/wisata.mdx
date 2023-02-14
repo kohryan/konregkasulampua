@@ -1,5 +1,5 @@
 ---
-title: "Pariwisata"
+title: "Info Wisata"
 description: Informasi terkait destinasi wisata dan pengetahuan tentang budaya & adat istiadat
 type: posts
 ---
@@ -24,7 +24,7 @@ export function PariwisataHeader() {
 }
 
 export function PariwisataIndex() {
-  return getPagesUnderRoute("/pariwisata").map((page) => {
+  return getPagesUnderRoute("/wisata").map((page) => {
     return (
       <div className="flex items-center justify-center align-top">
         <div key={page.route} className="relative">
@@ -38,7 +38,7 @@ export function PariwisataIndex() {
           <Link
             href={page.route}
             style={{ color: "inherit", textDecoration: "none" }}
-            className="text-md mt-2 block text-center font-medium"
+            className="text-md mt-2 block text-center justify-center font-medium"
           >
             {page.meta?.title || page.frontMatter?.title || page.name}
           </Link>

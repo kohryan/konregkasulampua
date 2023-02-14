@@ -1,33 +1,38 @@
 {
-    "*": {
-      "type": "page"
-    },
-    "index": {
-      "display": "hidden",
-      "theme": {
-        "layout": "raw",
-        "sidebar": false,
-        "toc": true
-      }
-    },
-    "kasulampua": {
-      "title": "𝗞𝗼𝗻𝗿𝗲𝗴 𝗞𝗮𝘀𝘂𝗹𝗮𝗺𝗽𝘂𝗮🔥",
-      "display": "children"
-    },
-    "berita": {
-      "title": "Berita",
-      "theme": {
-        "typesetting": "article"
-      }
-    },
-    "login": {
-      "display": "hidden",
-      "theme": {
-        "typesetting": "article"
-      }
-    },
-    "akomodasi": {
-      "title": "Akomodasi",
-      "display": "children"
+  "*": {
+    "type": "page"
+  },
+  "index": {
+    "display": "hidden",
+    "theme": {
+      "layout": "raw",
+      "sidebar": false,
+      "toc": true
     }
+  },
+  "kasulampua": {
+    "title": "𝗞𝗼𝗻𝗿𝗲𝗴 𝗞𝗮𝘀𝘂𝗹𝗮𝗺𝗽𝘂𝗮🔥",
+    "display": "children"
+  },
+  "berita": {
+    "title": "Berita",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "login": {
+    "display": "hidden",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "akomodasi": {
+    "title": "Akomodasi",
+    "display": "children"
+  },
+
+  "wisata": {
+    "title": "Wisata",
+    "display": "children"
+  }
 }

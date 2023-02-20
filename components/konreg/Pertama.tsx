@@ -48,11 +48,11 @@ export function HariPertama () {
                 Tindak Lanjut Dan Evaluasi Pelaksanaan Hasil Konreg PDRB Sulampua Tahun 2019 (High Level Meeting) dan Penentuan Tuan Rumah Konreg Selanjutnya</h5>
                 <div className="mt-6 flex items-center space-x-4">
                     <div className="flex-shrink-0">
-                <Image className="rounded-full" width="64" height="64" src="/people/edy.png" alt="Edy" />
+                <Image className="rounded-full" width="64" height="64" src="#" alt="direktur" />
                     </div>
                     <dl className="ml-3 text-sm font-medium leading-4 text-left whitespace-no-wrap">
                         <dd className="mb-1 text-md font-bold text-gray-400 dark:text-gray-300">Narasumber:</dd>
-                        <dd className="text-lg text-gray-900 dark:text-white">Puji Agus Kurniawan</dd>
+                        <dd className="text-lg text-gray-900 dark:text-white">Buyung Airlangga, M.Bus.</dd>
                         <p className="text-sm text-gray-400 dark:text-gray-300">Direktur Neraca Pengeluaran BPS RI</p>
                     </dl>
                 </div>

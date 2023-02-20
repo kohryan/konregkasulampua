@@ -42,6 +42,7 @@ export function Peserta() {
                   <div className="border border-t-0 text-sm border-red-400 rounded-b bg-red-100 px-4 py-1 text-red-700">
                     <p>- Nomor HP tidak boleh kosong!</p>
                     <p>- Nomor HP yang Anda Masukkan Tidak Ditemukan, Silakan Coba Lagi!</p>
+                    <p>- Jika Anda baru mengisi formulir peserta, mohon tunggu paling lama 20 menit</p>
                   </div>
                   <audio src="error.mp3" autoPlay />
                 </div>

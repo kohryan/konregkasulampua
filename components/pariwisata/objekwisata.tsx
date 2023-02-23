@@ -279,7 +279,7 @@ export function Objekwisata() {
                   <div className="p-5">
                       <h5 className="mb-0 text-lg font-bold tracking-tight text-gray-900 dark:text-white">{item.wisata}</h5>
                       <div className="mb-1 flex items-center justify-between align-middle"> 
-                          <p className="font-normal text-yellow-500">{item.lokasi}</p>
+                          <p className="font-normal text-gray-500">{item.lokasi}</p>
                       </div>
                       <div className="mb-1 flex items-center justify-between align-middle"> 
                           <p className="font-normal text-gray-700 dark:text-white"> 
@@ -291,11 +291,11 @@ export function Objekwisata() {
                       </div> */}
                       <div className="mb-1 flex items-center justify-between">
                           <span className="text-md font-normal text-gray-900 dark:text-white"> 
-                          <TicketIcon className="flex-shrink-0 h-6 w-6 text-green-500 inline-flex" aria-hidden="true"/> <b>Masuk:</b> {item.tiket}</span>
+                          🎫<b>Masuk:</b> {item.tiket}</span>
                       </div>
                       <div className="mb-1 flex items-center justify-between">
                           <span className="text-md font-normal text-gray-900 dark:text-white"> 
-                          <BanknotesIcon className="flex-shrink-0 h-6 w-6 text-green-500 inline-flex" aria-hidden="true"/> <b>Kapal:</b> {item.kapal}</span>
+                          🚢 <b>Kapal:</b> {item.kapal}</span>
                       </div>
                       <div className="mb-3 flex items-center justify-between">
                           <span className="text-md font-normal text-gray-900 dark:text-white"> 

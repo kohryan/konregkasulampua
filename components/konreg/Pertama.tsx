@@ -45,16 +45,30 @@ export function HariPertama () {
               <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
                 <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                 High Level Meeting</h5>
+                <h5 className="mb-1 text-md font-normal tracking-tight text-gray-900 dark:text-white">
+                - Evaluasi Pelaksanaan Hasil Kesepakatan Konreg PDRB Kalimantan dan Sulampua Tahun 2019</h5>
+                <h5 className="mb-1 text-md font-normal tracking-tight text-gray-900 dark:text-white">
+                - Tindak Lanjut Evaluasi dan Perumusan Kesepakatan Selanjutnya</h5>
                 <h5 className="mb-6 text-md font-normal tracking-tight text-gray-900 dark:text-white">
-                Tindak Lanjut Dan Evaluasi Pelaksanaan Hasil Konreg PDRB Sulampua Tahun 2019 dan Penentuan Tuan Rumah Konreg Selanjutnya</h5>
+                - Penentuan Tuan Rumah Konreg PDRB Kasulampua Selanjutnya</h5>
+                <h5 className="mb-6 text-md font-bold tracking-tight text-gray-900 dark:text-white">
+                Pimpinan Rapat:</h5>
                 <div className="mt-6 flex items-center space-x-4">
                     <div className="flex-shrink-0">
                        <Image className="rounded-full" width="64" height="64" src="/people/buyung.png" alt="direktur" />
                     </div>
                     <dl className="ml-3 text-sm font-medium leading-4 text-left whitespace-no-wrap">
-                        <dd className="mb-1 text-md font-bold text-gray-400 dark:text-gray-300">Narasumber:</dd>
                         <dd className="text-lg text-gray-900 dark:text-white">Buyung Airlangga, M.Bus.</dd>
                         <p className="text-sm text-gray-400 dark:text-gray-300">Direktur Neraca Pengeluaran BPS RI</p>
+                    </dl>
+                </div>
+                <div className="mt-6 flex items-center space-x-4">
+                    <div className="flex-shrink-0">
+                       <Image className="rounded-full" width="64" height="64" src="/people/puji.png" alt="direktur" />
+                    </div>
+                    <dl className="ml-3 text-sm font-medium leading-4 text-left whitespace-no-wrap">
+                        <dd className="text-lg text-gray-900 dark:text-white">Puji Agus Kurniawan, S.Si., M.A.</dd>
+                        <p className="text-sm text-gray-400 dark:text-gray-300">Direktur Neraca Produksi BPS RI</p>
                     </dl>
                 </div>
                 <div className="mt-6 flex items-center space-x-4">
@@ -62,15 +76,11 @@ export function HariPertama () {
                        <Image className="rounded-full" width="64" height="64" src="/people/robert.png" alt="Robert" />
                     </div>
                     <dl className="ml-3 text-sm font-medium leading-4 text-left whitespace-no-wrap">
-                        <dd className="mb-1 text-md font-bold text-gray-400 dark:text-gray-300">Moderator:</dd>
                         <dd className="text-lg text-gray-900 dark:text-white">J. Robert, ST, MT.</dd>
                         <p className="text-sm text-gray-400 dark:text-gray-300">Kepala Bappeda Sulawesi Tenggara</p>
                     </dl>
                 </div>
-                <p className="mt-6 font-normal text-sm text-gray-700 dark:text-gray-400">Peserta: Kepala BPS Provinsi, Ketua Tim Nerwilis BPS, Bappeda, dan Kepala Perwakilan BI se-Kasulampua</p>
-                <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
-                <h5 className=",b-6 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-                🫱🏼‍🫲🏽 Ramah Tamah</h5>
+                <p className="mt-6 font-normal text-sm text-gray-700 dark:text-gray-400"><b>Peserta Rapat:</b> Kepala BPS Provinsi, KPW BI Provinsi, Kepala Bappeda Provinsi, Tim Perumus dari BPS, BI, dan Bappeda</p>
             </a>
         </div>
     </div>

@@ -249,6 +249,9 @@ export function HariKedua () {
                 <ClockIcon className="flex-shrink-0 h-6 w-6 text-gray-400 dark:text-gray-200 mr-1" aria-hidden="true"/><h1 className="font-semibold text-md text-gray-400 dark:text-gray-200">14.00 - 17.30 WITA </h1>
               </div><hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
                 <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">City Tour di Pulau Bokori</h5>
+                <div className="mt-3 flex items-center space-x-4">
+                      <Image className="mb-3 items-center" width="400" height= "150" src="/pariwisata/bokori.jpeg" alt="Bokori" />
+                </div>
                 <div className="mb-1 flex items-center align-middle"> 
                     <MapPinIcon className="flex-shrink-0 h-6 w-6 text-red-500 mr-1" aria-hidden="true"/><span className="inline-block text-sm font-medium text-blue-500"> Lihat juga wisata di Sulawesi Tenggara →</span> 
                 </div>

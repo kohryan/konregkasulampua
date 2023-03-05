@@ -11,14 +11,8 @@
     }
   },
   "kasulampua": {
-    "title": "𝗞𝗼𝗻𝗿𝗲𝗴 𝗞𝗮𝘀𝘂𝗹𝗮𝗺𝗽𝘂𝗮🔥",
+    "title": "Kegiatan",
     "display": "children"
-  },
-  "berita": {
-    "title": "Berita",
-    "theme": {
-      "typesetting": "article"
-    }
   },
   "login": {
     "display": "hidden",
@@ -34,5 +28,11 @@
   "wisata": {
     "title": "Wisata",
     "display": "children"
+  },
+  "berita": {
+    "title": "Berita",
+    "theme": {
+      "typesetting": "article"
+    }
   }
 }

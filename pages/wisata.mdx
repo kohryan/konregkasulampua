@@ -6,19 +6,38 @@ type: posts
 
 import { getPagesUnderRoute } from "nextra/context";
 import Link from "next/link";
+import Image from "next/image";
 
 export function PariwisataHeader() {
   return (
     <div className="mx-auto mb-6 max-w-screen-lg border-b border-gray-400 border-opacity-20 pt-4 pb-8">
       <h1>
         <p className="mb-6 text-center font-bold lg:text-5xl">
-          Informasi Pariwisata
+          Informasi Wisata
         </p>
       </h1>
       <p className="text-center font-space-grotesk text-gray-500 dark:text-gray-400">
         Informasi terkait wisata dan pengetahuan tentang budaya & adat istiadat
         di Provinsi Sulawesi Tenggara
       </p>
+    </div>
+  );
+}
+
+export function BannerWisata() {
+  return (
+    <div className="mx-auto mb-6 max-w-screen-lg border-b border-gray-400 border-opacity-20">
+      <div className="text-center mb-2">
+        <Link href="/wisata/umkm"><Image src="/pariwisata/banner-umkm.png" width="1100" height="412" alt="umkm" className="inline-flex" /> </Link>
+      </div>
+      <div className="mb-6 grid grid-cols-2 gap-y-10 gap-x-2 xl:gap-x-2">
+        <div className="text-center">
+          <Image src="/pariwisata/banner-dwp.png" width="550" height="412" alt="dwp" className="inline-flex" />
+        </div>
+        <div className="text-center">
+          <Image src="/pariwisata/kuliner.png" width="550" height="412" alt="kuliner" className="inline-flex" />
+        </div>
+      </div>
     </div>
   );
 }
@@ -48,18 +67,6 @@ export function PariwisataIndex() {
   });
 }
 
-export function PariwisataLayout() {
-  return (
-    <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-      <p className="text-center font-space-grotesk text-sm font-light text-gray-600 dark:text-white">
-        Klik icon berikut untuk informasi selengkapnya
-      </p>
-      <div className="mx-auto mt-12 mb-0 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-8">
-        <PariwisataIndex />
-      </div>
-    </div>
-  );
-}
 
 <PariwisataHeader />
-<PariwisataLayout />
+<BannerWisata />

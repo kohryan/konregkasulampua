@@ -1,4 +1,4 @@
-import { MapPinIcon, BanknotesIcon, MapIcon, ClockIcon, ExclamationTriangleIcon, TicketIcon } from '@heroicons/react/24/solid'
+import { MapPinIcon, TagIcon, MapIcon, ClockIcon, ExclamationTriangleIcon, TicketIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 
 const objekwisata = [
@@ -279,27 +279,27 @@ export function Objekwisata() {
                   <div className="p-5">
                       <h5 className="mb-0 text-lg font-bold tracking-tight text-gray-900 dark:text-white">{item.wisata}</h5>
                       <div className="mb-1 flex items-center justify-between align-middle"> 
-                          <p className="font-normal text-gray-500">{item.lokasi}</p>
+                          <p className="font-semibold text-gray-900">{item.lokasi}</p>
                       </div>
                       <div className="mb-1 flex items-center justify-between align-middle"> 
-                          <p className="font-normal text-gray-700 dark:text-white"> 
+                          <p className="font-semibold text-gray-500 dark:text-white"> 
                           <MapPinIcon className="flex-shrink-0 h-6 w-6 text-red-500 hidden md:inline-flex lg:inline-flex" aria-hidden="true"/> {item.jarak} km • {item.durasi}</p>
                       </div>
                       {/* <div className="mb-1 flex items-center justify-between align-middle"> 
-                          <p className="font-normal text-gray-700 dark:text-white"> 
+                          <p className="font-semibold text-gray-700 dark:text-white"> 
                           <ClockIcon className="flex-shrink-0 h-6 w-6 text-orange-400 inline-flex" aria-hidden="true"/> {item.durasi}</p>
                       </div> */}
                       <div className="mb-1 flex items-center justify-between">
-                          <span className="text-md font-normal text-gray-900 dark:text-white"> 
-                          🎫<b>Masuk:</b> {item.tiket}</span>
+                          <span className="text-sm font-semibold text-gray-400 dark:text-white"> 
+                          <TagIcon className="flex-shrink-0 h-6 w-6 text-gray-300 inline-flex" aria-hidden="true"/> Tarif Masuk: IDR{item.tiket}</span>
                       </div>
-                      <div className="mb-1 flex items-center justify-between">
-                          <span className="text-md font-normal text-gray-900 dark:text-white"> 
-                          🚢 <b>Kapal:</b> {item.kapal}</span>
-                      </div>
+                      {/* <div className="mb-1 flex items-center justify-between">
+                          <span className="text-sm font-semibold text-gray-500 dark:text-white"> 
+                          🚢 : {item.kapal}</span>
+                      </div> */}
                       <div className="mb-3 flex items-center justify-between">
-                          <span className="text-md font-normal text-gray-900 dark:text-white"> 
-                          <ExclamationTriangleIcon className="flex-shrink-0 h-6 w-6 text-yellow-400 inline-flex" aria-hidden="true"/> {item.keterangan}</span>
+                          <span className="text-sm font-semibold text-gray-400 dark:text-white"> 
+                          <MapIcon className="flex-shrink-0 h-6 w-6 text-gray-300 inline-flex" aria-hidden="true"/> Transportasi: {item.keterangan}</span>
                       </div>
                       {/* <div className="mb-1 flex items-center justify-between align-middle">                            
                           <span className="text-sm font-medium text-blue-600">

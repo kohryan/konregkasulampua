@@ -7,12 +7,14 @@ type: posts
 import { Objekwisata } from "../../components/pariwisata/objekwisata";
 import { getPagesUnderRoute } from "nextra/context";
 import Link from "next/link";
+import Image from "next/image";
 
 export function WisataIndex() {
   return getPagesUnderRoute("/paketwisata").map((page) => {
     return (
       <div key={page.route} className="mb-10">
-        <Link href={page.route} style={{ color: "inherit", textDecoration: "none" }} className="block font-bold mt-8 text-2xl">
+        <Link href={page.route}><Image className="block mt-8"  src={page.frontMatter?.symbol} width="1100" height="165" alt="image" /></Link>
+        <Link href={page.route} style={{ color: "inherit", textDecoration: "none" }} className="block font-bold mt-2 text-2xl">
           {page.meta?.title || page.frontMatter?.title || page.name}
         </Link>
         <p className="text-sm opacity-80" style={{ marginTop: ".5rem" }}>
@@ -32,6 +34,6 @@ export function WisataIndex() {
 ## Paket Wisata 
 <WisataIndex />
 
-## Daftar Objek Wisata di Sulawesi Tenggara
+## Daftar Destinasi Wisata di Sulawesi Tenggara
 
 <Objekwisata />

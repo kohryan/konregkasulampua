@@ -34,5 +34,11 @@
     "theme": {
       "typesetting": "article"
     }
+  },
+  "paketwisata": {
+    "title": "Paket Wisata",
+    "theme": {
+      "typesetting": "article"
+    }
   }
 }

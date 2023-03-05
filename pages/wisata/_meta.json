@@ -1,6 +1,14 @@
 {
-    "objekwisata": "Objek Wisata",
+    "infowisata": "Info Wisata",
     "budaya": "Kebudayaan",
     "umkm": "UMKM BI",
-    "kuliner": "Kuliner Khas"
+    "kuliner": "Kuliner Khas",
+    "paketwisata": {
+        "title": "Paket Wisata",
+        "display": "hidden",
+        "sidebar": false,
+        "theme": {
+          "typesetting": "article"
+        }
+      }
 }

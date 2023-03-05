@@ -76,11 +76,7 @@ const navigation = {
     { name: "KP Maluku Utara", href: "https://www.bi.go.id/id/tentang-bi/profil/organisasi/Pages/Kantor-Perwakilan-Provinsi-Maluku-Utara.aspx" },
     { name: "KP Papua", href: "https://www.bi.go.id/id/tentang-bi/profil/organisasi/Pages/Kantor-Perwakilan-Provinsi-Papua.aspx" },
     { name: "KP Papua Barat", href: "https://www.bi.go.id/id/tentang-bi/profil/organisasi/Pages/Kantor-Perwakilan-Provinsi-Papua-Barat.aspx" },
-  ],
-  legal: [
-    { name: "Kebijakan Privasi", href: "#" },
-    { name: "Regulasi", href: "#" },
-  ],
+  ]
 };
 
 export function FooterContent() {
@@ -92,7 +88,7 @@ export function FooterContent() {
       <div className="w-full py-8 mx-auto">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="grid grid-cols-1 gap-8 xl:col-span-2">
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 md:gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
               <div className="mt-12 md:!mt-0">
                 <FooterHeader>Pemerintah Daerah</FooterHeader>
                 <ul role="list" className="mt-2 space-y-1.5 list-none ml-0">
@@ -117,16 +113,6 @@ export function FooterContent() {
                 <FooterHeader>Bank Indonesia</FooterHeader>
                 <ul role="list" className="mt-2 space-y-1.5 list-none ml-0">
                   {navigation.bi.map((item) => (
-                    <li key={item.name}>
-                      <FooterLink href={item.href}>{item.name}</FooterLink>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:!mt-0">
-                <FooterHeader>Legal</FooterHeader>
-                <ul role="list" className="mt-2 space-y-1.5 list-none ml-0">
-                  {navigation.legal.map((item) => (
                     <li key={item.name}>
                       <FooterLink href={item.href}>{item.name}</FooterLink>
                     </li>
@@ -165,10 +151,7 @@ export function FooterContent() {
                   </svg>
                 </a>
             </div>
-          </div>
-        </div>
-
-        <div className="pt-8 mt-8 sm:flex sm:items-center sm:justify-between">
+            <div className="pt-8 mt-8 sm:flex sm:items-center sm:justify-between">
           <div>
             <a
               className="text-current"
@@ -188,6 +171,9 @@ export function FooterContent() {
             </p>
           </div>
         </div>
+          </div>
+        </div>
+
       </div>
     </div>
   );

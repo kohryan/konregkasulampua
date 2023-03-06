@@ -1,0 +1,13 @@
+{
+    "*": {
+      "display": "hidden",
+      "theme": {
+        "toc": false,
+        "sidebar": false,
+        "pagination": false,
+        "typesetting": "article"
+      }
+    },
+    "kopi-tolaki.mdx": "Kopi Tolaki"
+  }
+  

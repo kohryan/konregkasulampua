@@ -14,12 +14,6 @@
     "title": "Kegiatan",
     "display": "children"
   },
-  "login": {
-    "display": "hidden",
-    "theme": {
-      "typesetting": "article"
-    }
-  },
   "akomodasi": {
     "title": "Akomodasi",
     "display": "children"
@@ -37,6 +31,19 @@
   },
   "paketwisata": {
     "title": "Paket Wisata",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "detil-umkm": {
+    "title": "Detil UMKM",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "login": {
+    "title": "Login",
+    "display": "hidden",
     "theme": {
       "typesetting": "article"
     }

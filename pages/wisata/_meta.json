@@ -1,10 +1,18 @@
 {
     "infowisata": "Info Wisata",
+    "umkm": "Pameran UMKM BI",
     "pusat-oleholeh": "Pusat Oleh-Oleh",
-    "umkm": "UMKM BI",
     "kuliner": "Kuliner Khas",
     "paketwisata": {
         "title": "Paket Wisata",
+        "display": "hidden",
+        "sidebar": false,
+        "theme": {
+          "typesetting": "article"
+        }
+      },
+      "detil-umkm": {
+        "title": "Detil UMKM",
         "display": "hidden",
         "sidebar": false,
         "theme": {

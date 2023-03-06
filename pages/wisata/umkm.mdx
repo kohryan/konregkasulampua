@@ -1,9 +1,63 @@
 ---
-title: "Informasi Hotel/Penginapan"
-description: Informasi Hotel/Penginapan di sekitar lokasi kegiatan
+title: "Pameran UMKM Sulawesi Tenggara Bank Indonesia"
+description: Pameran UMKM Sulawesi Tenggara Bank Indonesia
 symbol: "/pariwisata/umkm.svg"
 ---
+import Image from "next/image";
+import { getPagesUnderRoute } from "nextra/context";
+import Link from "next/link";
+import { PhoneArrowDownLeftIcon, TagIcon, UserIcon } from '@heroicons/react/24/solid'
 
-import { Hotel } from "../../components/akomodasi/Hotel";
+export function BannerWisata() {
+  return (
+    <div className="relative mx-auto mb-6 max-w-screen-lg border-b border-gray-400 border-opacity-20">
+      <div className="text-center mb-2">
+        <Image src="/pariwisata/banner-umkm1.png" width="1100" height="412" alt="umkm" className="inline-flex"></Image>
+            <Link href="https://wa.me/6287851660170" className="shadow-lg shadow-red-700 absolute bottom-0 right-0 items-center m-2 xs:m-2 sm:m-2 lg:m-6 xl:m-6 px-3 py-2 text-sm lg:text-md xl:text-md sm:text-sm xs:text-sm font-medium text-center text-white bg-red-500 rounded-full hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-red-500 dark:hover:bg-red-600 dark:focus:ring-red-600">
+                <PhoneArrowDownLeftIcon className="flex-shrink-0 h-4 w-4 align-middle text-white inline-flex mr-1"/> Pesan Online
+            </Link>
+      </div>
+    </div>
+  );
+}
 
-## UMKM Bank Indonesia
+## Selayang Pandang
+
+<BannerWisata />
+
+**Bank Indonesia Kanwil Provinsi Sulawesi Tenggara** dengan bangga mempersembahkan produk unggulan UMKM pilihan sebagai dukungan terhadap pengembangan UMKM Sulawesi Tenggara.
+
+Pemilihan produk olahan makanan dan minuman mempresentasikan produk lokal khas Sulawesi Tenggara merupakan wujud apresiasi dan kontribusi dalam melestarikan produk lokal Sulawesi Tenggara. Begitu pula pemilihan craft, kriya, dan tenun merupakan upaya untuk mempromosikan keindahan Sulawesi Tenggara.
+
+Langkah ini merupakan wujud dukungan nyata pada **Gerakan Bangga Buatan Indonesia** yang inklusif menuju pemulihan ekonomi.
+
+## Produk
+
+export function WisataIndex() {
+  return getPagesUnderRoute("/detil-umkm").map((page) => {
+    return (
+      <div key={page.route} className="mb-10">
+        <Link href={page.route}><Image className="block mt-8"  src={page.frontMatter?.symbol} width="1100" height="165" alt="image" /></Link>
+        <Link href={page.route} style={{ color: "inherit", textDecoration: "none" }} className="block font-bold mt-2 text-2xl">
+          {page.meta?.title || page.frontMatter?.title || page.name}
+        </Link>
+        <p className="mb-2 text-md font-semibold opacity-80" style={{ marginTop: ".5rem" }}>
+           <UserIcon className="flex-shrink-0 h-4 w-4 align-middle opacity-80 inline-flex mr-1"/> {page.frontMatter?.entitas}{" "}
+        </p>
+        <p className="text-sm opacity-80" style={{ marginTop: ".5rem" }}>
+           {page.frontMatter?.description}{" "}
+        </p>
+        <p className="mb-2 text-sm opacity-80" style={{ marginTop: ".5rem" }}>
+           <TagIcon className="flex-shrink-0 h-4 w-4 align-middle opacity-80 inline-flex mr-1"/> {page.frontMatter?.tag}{" "}
+        </p>
+        <span className="inline-block text-md font-medium text-blue-500">
+            <Link href={page.route}>{"Info Selengkapnya →"}</Link>
+        </span>
+      </div>
+    );
+  });
+}
+
+<div className="mt-2 grid grid-cols-2 gap-y-10 sm:grid-cols-2 gap-x-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-2">
+<WisataIndex />
+</div>

@@ -36,7 +36,7 @@ Langkah ini merupakan wujud dukungan nyata pada **Gerakan Bangga Buatan Indonesi
 export function WisataIndex() {
   return getPagesUnderRoute("/detil-umkm").map((page) => {
     return (
-      <div key={page.route} className="mb-10">
+      <div key={page.route} className="mb-2">
         <Link href={page.route}><Image className="block mt-8"  src={page.frontMatter?.symbol} width="1100" height="165" alt="image" /></Link>
         <Link href={page.route} style={{ color: "inherit", textDecoration: "none" }} className="block font-bold mt-2 text-2xl">
           {page.meta?.title || page.frontMatter?.title || page.name}
@@ -58,6 +58,6 @@ export function WisataIndex() {
   });
 }
 
-<div className="mt-2 grid grid-cols-2 gap-y-10 sm:grid-cols-2 gap-x-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-2">
+<div className="mt-2 grid grid-cols-2 sm:grid-cols-2 gap-x-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-2">
 <WisataIndex />
 </div>

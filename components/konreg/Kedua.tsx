@@ -35,7 +35,7 @@ export function HariKedua () {
                   <h5 className="mb-1 text-md font-normal tracking-tight text-gray-900 dark:text-white">
                     - Tarian Penyambutan</h5>
                     <h5 className="mb-1 text-md font-normal tracking-tight text-gray-900 dark:text-white">
-                    - Menyayikan Lagu Indonesia Raya</h5>
+                    - Menyanyikan Lagu Indonesia Raya</h5>
                     <h5 className="mb-3 text-md font-normal tracking-tight text-gray-900 dark:text-white">
                     - Pembacaan Doa</h5>
 

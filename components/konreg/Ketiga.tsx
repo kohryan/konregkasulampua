@@ -15,10 +15,10 @@ export function HariKetiga () {
               </div><hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
                 <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">City Tour Mandiri</h5>
                 <div className="mb-2 flex items-center align-middle"> 
-                    <MapPinIcon className="flex-shrink-0 h-6 w-6 text-red-500 mr-1" aria-hidden="true"/><Link href="/wisata/objekwisata"><span className="inline-block text-sm font-medium text-blue-500"> Tempat wisata di Sulawesi Tenggara →</span></Link>
+                    <MapPinIcon className="flex-shrink-0 h-6 w-6 text-red-500 mr-1" aria-hidden="true"/><Link href="/wisata/infowisata"><span className="inline-block text-sm font-medium text-blue-500"> Tempat wisata di Sulawesi Tenggara →</span></Link>
                 </div>
                 <div className="flex items-center align-middle"> 
-                    <MapPinIcon className="flex-shrink-0 h-6 w-6 text-red-500 mr-1" aria-hidden="true"/><Link href="/akomodasi/belanja"><span className="inline-block text-sm font-medium text-blue-500"> Toko oleh-oleh di Kendari →</span></Link>
+                    <MapPinIcon className="flex-shrink-0 h-6 w-6 text-red-500 mr-1" aria-hidden="true"/><Link href="/wisata/pusat-oleholeh"><span className="inline-block text-sm font-medium text-blue-500"> Toko oleh-oleh di Kendari →</span></Link>
                 </div>
             </div>
         </div>

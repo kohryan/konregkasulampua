@@ -41,10 +41,14 @@ export function HariPertama () {
               <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
               <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
               🛎️ Welcome Dinner</h5>
+              <p className="mt-1 font-normal text-md opacity-80">(<b>Dresscode:</b> Batik/Tenun)</p>
                 <div className="flex items-center space-x-4"></div>
               <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
                 <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                 High Level Meeting</h5>
+                <div className="mb-3 flex items-center align-middle">  
+                <MapPinIcon className="flex-shrink-0 h-6 w-6 text-red-500 mr-1" aria-hidden="true"/><h1 className="font-semibold text-md text-gray-400 dark:text-gray-200">Ruang Phinisi 1</h1>
+                </div>
                 <h5 className="mb-1 text-md font-normal tracking-tight text-gray-900 dark:text-white">
                 - Evaluasi Pelaksanaan Hasil Kesepakatan Konreg PDRB Kalimantan dan Sulampua Tahun 2019</h5>
                 <h5 className="mb-1 text-md font-normal tracking-tight text-gray-900 dark:text-white">
@@ -81,6 +85,29 @@ export function HariPertama () {
                     </dl>
                 </div>
                 <p className="mt-6 font-normal text-sm text-gray-700 dark:text-gray-400"><b>Peserta Rapat:</b> Kepala BPS Provinsi, KPW BI Provinsi, Kepala Bappeda Provinsi, Tim Perumus dari BPS, BI, dan Bappeda</p>
+                
+                <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
+                <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+                Review Website Kasulampua Pra Launching</h5>
+                <div className="mb-3 flex items-center align-middle">  
+                <MapPinIcon className="flex-shrink-0 h-6 w-6 text-red-500 mr-1" aria-hidden="true"/><h1 className="font-semibold text-md text-gray-400 dark:text-gray-200">Ruang Tulip</h1>
+                </div>
+                <h5 className="mb-1 text-md font-normal tracking-tight text-gray-900 dark:text-white">
+                - Pengenalan Website</h5>
+                <h5 className="mb-6 text-md font-normal tracking-tight text-gray-900 dark:text-white">
+                - Kontribusi Konten</h5>
+                <h5 className="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">
+                Pimpinan Rapat:</h5>
+                <div className="mt-2 flex items-center space-x-4">
+                    <div className="flex-shrink-0">
+                       <Image className="rounded-full" width="64" height="64" src="/people/fatoer.png" alt="direktur" />
+                    </div>
+                    <dl className="ml-3 text-sm font-medium leading-4 text-left whitespace-no-wrap">
+                        <dd className="text-lg text-gray-900 dark:text-white">Fatchur Rochman, SST., ME..</dd>
+                        <p className="text-sm text-gray-400 dark:text-gray-300">Pranata Komputer Ahli Madya BPS Prov. Sulawesi Tenggara</p>
+                    </dl>
+                </div>
+                <p className="mt-6 font-normal text-sm text-gray-700 dark:text-gray-400"><b>Peserta Rapat:</b> Peserta Inti (selain Kepala Satker), Perwakilan BPS RI, Tim Website dari BPS, BI, dan Bappeda</p>
             </a>
         </div>
     </div>

@@ -3,5 +3,6 @@
     "---": {
         "type": "separator"
       },
-    "jadwal": "Jadwal Kegiatan"
+    "jadwal": "Jadwal Kegiatan",
+    "materi": "Materi"
 }

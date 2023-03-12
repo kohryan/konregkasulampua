@@ -6,6 +6,7 @@ type: posts
 
 import { getPagesUnderRoute } from "nextra/context";
 import Link from "next/link";
+import Image from "next/image";
 
 export function AkomodasiHeader() {
   return (
@@ -14,8 +15,27 @@ export function AkomodasiHeader() {
         <p className="font-bold text-center mb-6 lg:text-5xl">Informasi Akomodasi</p>
       </h1>
       <p className="text-center text-gray-500 dark:text-gray-400 font-space-grotesk">
-        Informasi terkait hotel/penginapan, tempat makan, pusat perbelanjaan, akses transportasi, dan fasilitas akomodasi lainnya di sekitar lokasi kegiatan
+        Informasi terkait hotel/penginapan, tempat makan, pusat perbelanjaan, akses transportasi, dan fasilitas akomodasi lainnya di sekitar lokasi kegiatan. Klik banner di bawah ini untuk selengkapnya:
       </p>
+    </div>
+  );
+}
+
+export function BannerAkom() {
+  return (
+    <div className="mx-auto mb-6 max-w-screen-lg border-b border-gray-400 border-opacity-20">
+      <div className="text-center mb-2">
+        <Link href="/akomodasi/hotel"><Image src="/akomodasi/bannerhotel.png" width="1100" height="212" alt="hotel" className="inline-flex" /> </Link>
+      </div>
+      <div className="text-center mb-2">
+        <Link href="/akomodasi/rumahmakan"><Image src="/akomodasi/banneresto.png" width="1100" height="212" alt="hotel" className="inline-flex" /> </Link>
+      </div>
+      <div className="text-center mb-2">
+        <Link href="/akomodasi/belanja"><Image src="/akomodasi/bannerbelanja.png" width="1100" height="212" alt="hotel" className="inline-flex" /> </Link>
+      </div>
+      <div className="text-center mb-2">
+        <Link href="/akomodasi/transportasi"><Image src="/akomodasi/bannertrans.png" width="1100" height="212" alt="hotel" className="inline-flex" /> </Link>
+      </div>
     </div>
   );
 }
@@ -37,18 +57,6 @@ export function AkomodasiIndex() {
   });
 }
 
-export function AkomodasiLayout() {
-    return (
-      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-          <p className="text-center text-sm font-light text-gray-600 dark:text-white font-space-grotesk">
-             Klik icon berikut untuk informasi selengkapnya
-          </p>
-        <div className="grid grid-cols-2 gap-y-10 mt-12 sm:grid-cols-2 gap-x-6 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-8 mx-auto mb-0">
-              <AkomodasiIndex />
-        </div>
-      </div>
-  );
-}
 
 <AkomodasiHeader />
-<AkomodasiLayout />
+<BannerAkom />

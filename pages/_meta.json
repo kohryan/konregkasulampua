@@ -18,7 +18,6 @@
     "title": "Akomodasi",
     "display": "children"
   },
-
   "wisata": {
     "title": "Wisata",
     "display": "children"
@@ -28,6 +27,10 @@
     "theme": {
       "typesetting": "article"
     }
+  },
+  "kontak": {
+    "title": "Kontak",
+    "display": "children"
   },
   "paketwisata": {
     "title": "Paket Wisata",

@@ -56,6 +56,42 @@ const oleh = [
         "tag": "Rumah Tenun",
         "gmaps": "https://goo.gl/maps/rJGyfhq1vRVFiVNX8",
         "kontak": "https://wa.me/6281376133154",
+      },
+      {
+        "id": 7,
+        "foto": "/oleh/brownte.jpg",
+        "nama": "Brownte Kendari",
+        "kategori": "makanan",
+        "tag": "Brownte, Makanan",
+        "gmaps": "https://goo.gl/maps/FLQmRUAi7gkfsmmYA",
+        "kontak": "https://wa.me/6282393124817",
+      },
+      {
+        "id": 8,
+        "foto": "/oleh/mubaraq.jpg",
+        "nama": "Mete Mubaraq",
+        "kategori": "makanan",
+        "tag": "Mete, Makanan, Souvenir",
+        "gmaps": "https://goo.gl/maps/KB2kBzm5SXht29Gy7",
+        "kontak": "https://wa.me/6285256640009",
+      },
+      {
+        "id": 9,
+        "foto": "/oleh/athifah.jpg",
+        "nama": "Athifah Oleh-Oleh",
+        "kategori": "makanan",
+        "tag": "Makanan, Souvenir",
+        "gmaps": "https://goo.gl/maps/ovw9BAx7LE4qZZGMA",
+        "kontak": "https://wa.me/6285256107272",
+      },
+      {
+        "id": 10,
+        "foto": "/oleh/bravo.jpg",
+        "nama": "Bravo Oleh-Oleh",
+        "kategori": "makanan",
+        "tag": "Makanan, Souvenir",
+        "gmaps": "https://goo.gl/maps/xjnZRaMYtLhV8Z627",
+        "kontak": "https://www.instagram.com/bravosouvenir/",
       }
   ]
 
@@ -82,7 +118,7 @@ export function Oleholeh () {
             <select className="mb-3 text-sm px-4 border shadow-sm border-gray-400 rounded appearance-none bg-white dark:bg-gray-800 dark:border-gray-700 focus:outline-none focus:shadow-outline" 
             onChange={handleFilter} value={selectedCategory || ""}>
                 <option value="">Semua</option>
-                <option value="makanan">Makanan dan Aksesori</option>
+                <option value="makanan">Makanan dan Souvenir</option>
                 <option value="tenun">Rumah Tenun</option>
             </select>
         </div>

@@ -1,7 +1,10 @@
 {
     "infowisata": "Info Wisata",
     "umkm": "Pameran UMKM BI",
-    "dwp": "Bazar DWP",
+    "dwp": {
+      "title": "Bazar DWP",
+      "href": "https://umkmkonreg.odoo.com/"
+    }, 
     "pusat-oleholeh": "Pusat Oleh-Oleh",
     "kuliner": "Kuliner Khas",
     "paketwisata": {

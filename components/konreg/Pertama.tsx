@@ -54,7 +54,7 @@ export function HariPertama () {
                 <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                 High Level Meeting</h5>
                 <div className="mb-3 flex items-center align-middle">  
-                <MapPinIcon className="flex-shrink-0 h-6 w-6 text-red-500 mr-1" aria-hidden="true"/><h1 className="font-semibold text-md text-gray-400 dark:text-gray-200">Ruang Tulip</h1>
+                <MapPinIcon className="flex-shrink-0 h-6 w-6 text-red-500 mr-1" aria-hidden="true"/><h1 className="font-semibold text-md text-gray-400 dark:text-gray-200">Ruang Phinisi 1</h1>
                 </div>
                 <p className="mt-1 mb-6 font-normal text-md opacity-80">(<b>Dresscode:</b> Batik/Tenun)</p>
                 <h5 className="mb-1 text-md font-normal tracking-tight text-gray-900 dark:text-white">
@@ -97,8 +97,11 @@ export function HariPertama () {
                 <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
                 <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                 Review Website Kasulampua Pra Launching</h5>
+                <div className="mb-1 flex items-center align-middle">  
+                <MapPinIcon className="flex-shrink-0 h-6 w-6 text-red-500 mr-1" aria-hidden="true"/><h1 className="font-semibold text-md text-gray-400 dark:text-gray-200">Ruang Tulip</h1>
+                </div>
                 <div className="mb-3 flex items-center align-middle">  
-                <MapPinIcon className="flex-shrink-0 h-6 w-6 text-red-500 mr-1" aria-hidden="true"/><h1 className="font-semibold text-md text-gray-400 dark:text-gray-200">Ruang Phinisi 1</h1>
+                <ClockIcon className="flex-shrink-0 h-6 w-6 text-gray-500 mr-1" aria-hidden="true"/><h1 className="font-semibold text-md text-gray-400 dark:text-gray-200">19.30 - 20.30 WITA</h1>
                 </div>
                 <h5 className="mb-1 text-md font-normal tracking-tight text-gray-900 dark:text-white">
                 - Pengenalan Website</h5>

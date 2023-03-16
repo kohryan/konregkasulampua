@@ -1,8 +1,8 @@
 {
-    "informasi": "Informasi",
-    "---": {
-        "type": "separator"
-      },
-    "jadwal": "Jadwal Kegiatan",
-    "materi": "Materi"
+  "informasi": "Informasi",
+  "---": {
+      "type": "separator"
+    },
+  "jadwal": "Jadwal Kegiatan",
+  "materi": "Materi"
 }

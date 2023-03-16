@@ -22,8 +22,8 @@
     "title": "Wisata",
     "display": "children"
   },
-  "berita": {
-    "title": "Berita",
+  "galeri": {
+    "title": "Galeri",
     "theme": {
       "typesetting": "article"
     }

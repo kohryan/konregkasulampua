@@ -10,30 +10,27 @@ export function BeritaHeader() {
   return (
     <div className="max-w-screen-lg mx-auto pt-4 pb-8 mb-16 border-b border-gray-400 border-opacity-20">
       <h1>
-        <p className="font-bold text-center mb-6 lg:text-5xl">Berita</p>
+        <p className="font-bold text-md text-center mb-6 lg:text-5xl">Galeri</p>
       </h1>
       <p className="text-center text-gray-500 dark:text-gray-400 font-space-grotesk">
-        Berita Terkait Kegiatan Konsultasi Regional PDRB Wilayah Kasulampua 2023
+        Unduh foto-foto selama kegiatan Konreg Kasulampua 2023
       </p>
     </div>
   );
 }
 
 export function BeritaIndex() {
-  return getPagesUnderRoute("/berita").map((page) => {
+  return getPagesUnderRoute("/galeri").map((page) => {
     return (
-      <div key={page.route} className="mb-10">
+      <div key={page.route} className="mb-1">
         <Link href={page.route} style={{ color: "inherit", textDecoration: "none" }} className="block font-semibold mt-8 text-2xl">
           {page.meta?.title || page.frontMatter?.title || page.name}
         </Link>
-        <p className="text-sm opacity-80" style={{ marginTop: ".5rem" }}>
-          Tag: {page.frontMatter?.tag}{" "}
-        </p>
-        <span className="inline-block text-sm font-medium text-blue-500">
-            <Link href={page.route}>{"Baca Selengkapnya →"}</Link>
+        <span className="inline-block text-md font-medium text-blue-500">
+            <a href={page.frontMatter.url}>{"Unduh →"}</a>
         </span>
         {page.frontMatter?.date ? (
-          <p className="opacity-50 text-sm">{page.frontMatter.date}</p>
+          <p className="opacity-75 text-md">{page.frontMatter.date}</p>
         ) : null}
       </div>
     );

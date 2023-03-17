@@ -4,5 +4,6 @@
       "type": "separator"
     },
   "jadwal": "Jadwal Kegiatan",
-  "materi": "Materi"
+  "materi": "Materi",
+  "notula": "Notula"
 }

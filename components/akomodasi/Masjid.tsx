@@ -11,7 +11,7 @@ const masjid = [
     },
     {
       "id": 2,
-      "foto": "/hotel/jannah.jpg",
+      "foto": "/hotel/jannah.png",
       "namahotel": "Masjid Raudhatul Jannah",
       "jarak": "2,00",
       "gmaps": "https://goo.gl/maps/Rgg2JdK66u4HmQjy9",

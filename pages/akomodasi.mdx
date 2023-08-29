@@ -15,7 +15,7 @@ export function AkomodasiHeader() {
         <p className="font-bold text-center mb-6 lg:text-5xl">Informasi Akomodasi</p>
       </h1>
       <p className="text-center text-gray-500 dark:text-gray-400 font-space-grotesk">
-        Informasi terkait hotel/penginapan, tempat makan, pusat perbelanjaan, akses transportasi, dan fasilitas akomodasi lainnya di sekitar lokasi kegiatan. Klik banner di bawah ini untuk selengkapnya:
+        Informasi terkait hotel/penginapan, tempat makan, pusat perbelanjaan, akses transportasi, masjid, dan fasilitas akomodasi lainnya di sekitar lokasi kegiatan. Klik banner di bawah ini untuk selengkapnya:
       </p>
     </div>
   );
@@ -35,6 +35,9 @@ export function BannerAkom() {
       </div>
       <div className="text-center mb-2">
         <Link href="/akomodasi/transportasi"><Image src="/akomodasi/bannertrans.png" width="1100" height="212" alt="hotel" className="inline-flex" /> </Link>
+      </div>
+      <div className="text-center mb-2">
+        <Link href="/akomodasi/masjid"><Image src="/akomodasi/masjid.png" width="1100" height="212" alt="masjid" className="inline-flex" /> </Link>
       </div>
     </div>
   );

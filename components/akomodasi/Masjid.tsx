@@ -6,7 +6,7 @@ const masjid = [
       "id": 1,
       "foto": "/hotel/aljaariyah.png",
       "namahotel": "Masjid Al Jaariyah",
-      "jarak": 0,65,
+      "jarak": "0,65",
       "gmaps": "https://goo.gl/maps/bxirxRirSBFwP8Kh8",
     },
     {

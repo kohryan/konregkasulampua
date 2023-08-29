@@ -30,10 +30,6 @@ export function Masjid() {
                         <Image className="rounded-t-lg" width="630" height="420" src={item.foto} alt="claro" />
                     <div className="p-5">
                         <h5 className="mb-0 text-lg font-bold tracking-tight text-gray-900 dark:text-white">{item.namahotel}</h5>
-                        <div className="mb-1 flex items-center justify-between align-middle"> 
-                            <p className="font-normal text-gray-700 dark:text-white"> 
-                                <MapPinIcon className="flex-shrink-0 h-6 w-6 text-red-500 hidden md:inline-flex lg:inline-flex" aria-hidden="true"/> {item.jarak} km • {item.waktu} menit</p>
-                        </div>
                         <a href={item.gmaps} target="_blank" rel="noopener noreferrer"><span className="mb-3 inline-block text-sm font-medium text-blue-500">
                         Lihat Peta →</span></a> 
                     </div>
